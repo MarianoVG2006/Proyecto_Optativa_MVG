@@ -34,8 +34,13 @@ public class ProjectsServiceImpl implements ProjectsService {
     @Override
     public Projects updateProject(Long projectId, Projects project) {
         Projects existingProject = projectsRepository.findById(projectId).orElseThrow(() -> new RuntimeException("Project not found with id: " + projectId));
-        existingProject.setWordProjects(project.getWordProjects());
+        existingProject.setProjectName(project.getProjectName());
         existingProject.setDescription(project.getDescription());
+        existingProject.setStartDate(project.getStartDate());
+        existingProject.setEndDate(project.getEndDate());
+        existingProject.setRepositiryUrl(project.getRepositiryUrl());
+        existingProject.setDemoUrl(project.getDemoUrl());
+        existingProject.setPicture(project.getPicture());
         return projectsRepository.save(existingProject);
     }
 
