@@ -22,9 +22,9 @@ public class ProjectsServiceImpl implements ProjectsService {
     }
 
     @Override 
-    public Projects getProjectByWordProjects(String wordProjects) {
-        return projectsRepository.findByWordProjects(wordProjects).orElseThrow(() -> new RuntimeException("Project not found with wordProjects: " + wordProjects));
-    }
+    public List<Projects> getProjectByWordProjects(String wordProjects) {
+        return projectsRepository.findByWordProjects(wordProjects);
+    }    
 
     @Override 
     public Projects createProject(Projects project) {
