@@ -1,4 +1,4 @@
-package com.example.Proyecto_Optativa_MVG.persistence.Repository;
+package com.example.Proyecto_Optativa_MVG.persistence.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
