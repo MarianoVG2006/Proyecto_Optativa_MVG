@@ -1,4 +1,5 @@
-package com.example.Proyecto_Optativa_MVG.persistence.repository;
+package com.example.Proyecto_Optativa_MVG.persistence.model.repository;
+
 
 import java.util.Optional;
 
