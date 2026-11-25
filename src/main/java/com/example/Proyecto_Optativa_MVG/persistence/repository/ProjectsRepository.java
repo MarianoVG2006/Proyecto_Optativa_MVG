@@ -1,4 +1,4 @@
-package com.example.Proyecto_Optativa_MVG.persistence.Repository;
+package com.example.Proyecto_Optativa_MVG.persistence.repository;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import com.example.Proyecto_Optativa_MVG.persistence.model.Projects;
 
 public interface ProjectsRepository extends JpaRepository<Projects, Long> {
 
-    List<Projects> findByWordProjects(String wordProjects);
+    List<Projects> findByProjectNameContainingIgnoreCase(String projectName);
     
     
 }

@@ -4,7 +4,7 @@ package com.example.Proyecto_Optativa_MVG.service.impl;
 import org.springframework.stereotype.Service;
 
 import com.example.Proyecto_Optativa_MVG.persistence.model.Technologies;
-import com.example.Proyecto_Optativa_MVG.persistence.Repository.TechnologiesRepository;
+import com.example.Proyecto_Optativa_MVG.persistence.repository.TechnologiesRepository;
 import com.example.Proyecto_Optativa_MVG.service.TechnologiesService;
 
 import lombok.AllArgsConstructor;

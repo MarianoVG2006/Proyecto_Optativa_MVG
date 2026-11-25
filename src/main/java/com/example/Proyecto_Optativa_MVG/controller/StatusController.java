@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 @RestController 
 @CrossOrigin 
 @AllArgsConstructor 
-@RequestMapping ("api/v1")
+@RequestMapping ("/api/v1/status")
 public class StatusController {
 
     StatusConverter statusconverter;

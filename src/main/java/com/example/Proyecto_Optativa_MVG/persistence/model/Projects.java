@@ -39,7 +39,7 @@ public class Projects {
     private LocalDate startDate;
     @Column (name = "end_date")
     private LocalDate endDate;
-    @Column (name = "repositiry_url")
+    @Column (name = "repository_url")
     private String repositiryUrl;
     @Column (name = "demo_url")
     private String demoUrl;
@@ -47,18 +47,16 @@ public class Projects {
     private String picture;
 
     @ManyToOne (fetch = FetchType.LAZY)
-    @JoinColumn (name = "status_status_id", referencedColumnName = "status_status_id")
+    @JoinColumn (name = "status_id", referencedColumnName = "status_id")
     private Status status;
 
 
     @ManyToMany ( fetch = FetchType.LAZY)
-    @JoinTable (name = "technologies_used_in_projects", joinColumns = {@JoinColumn(name = "projects_project_id", referencedColumnName = "projects_project_id")}
-    , inverseJoinColumns = {@JoinColumn(name = "technologies_tech_id", referencedColumnName = "technologies_tech_id")})
+    @JoinTable(name = "technologies_used_in_projects",joinColumns = @JoinColumn(name = "projects_project_id"),inverseJoinColumns = @JoinColumn(name = "technologies_tech_id"))
     private List<Technologies> technologies;
 
     @ManyToMany ( fetch = FetchType.LAZY)
-    @JoinTable (name = "developers_worked_on_projects", joinColumns = {@JoinColumn(name = "projects_project_id", referencedColumnName = "projects_project_id")}
-    , inverseJoinColumns = {@JoinColumn(name = "developers_dev_id", referencedColumnName = "developers_dev_id")})
+    @JoinTable(name = "developers_worked_on_projects",joinColumns = @JoinColumn(name = "projects_project_id"),inverseJoinColumns = @JoinColumn(name = "developers_dev_id"))
     private List<Developers> developers;
 
    

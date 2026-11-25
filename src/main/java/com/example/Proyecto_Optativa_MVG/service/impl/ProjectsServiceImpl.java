@@ -23,7 +23,7 @@ public class ProjectsServiceImpl implements ProjectsService {
 
     @Override 
     public List<Projects> getProjectByWordProjects(String wordProjects) {
-        return projectsRepository.findByWordProjects(wordProjects);
+        return projectsRepository.findByProjectNameContainingIgnoreCase(wordProjects);
     }    
 
     @Override 

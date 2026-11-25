@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController 
-@RequestMapping ("/api/v1")
+@RequestMapping ("/api/v1/projects")
 @CrossOrigin 
 @AllArgsConstructor 
 public class ProjectsController {

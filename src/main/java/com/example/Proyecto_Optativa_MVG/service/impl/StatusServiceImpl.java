@@ -3,7 +3,7 @@ package com.example.Proyecto_Optativa_MVG.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Proyecto_Optativa_MVG.persistence.Repository.StatusRepository;
+import com.example.Proyecto_Optativa_MVG.persistence.repository.StatusRepository;
 import com.example.Proyecto_Optativa_MVG.service.StatusService;
 import com.example.Proyecto_Optativa_MVG.persistence.model.Status;
 import lombok.AllArgsConstructor;

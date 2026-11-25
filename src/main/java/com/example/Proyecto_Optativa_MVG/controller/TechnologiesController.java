@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController 
 @CrossOrigin 
 @AllArgsConstructor 
-@RequestMapping ("/api/v1")
+@RequestMapping ("/api/v1/technologies")
 public class TechnologiesController {
     
     TechnologiesConverter technologiesConverter;
@@ -42,7 +42,7 @@ public class TechnologiesController {
     public ResponseEntity<Void> deleteTechnologies(@PathVariable Long id) {
 
     technologiesService.deleteTechnologies(id);
-    
+
     return ResponseEntity.noContent().build();
 
 }
