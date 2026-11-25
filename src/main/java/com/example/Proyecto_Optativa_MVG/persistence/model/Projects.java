@@ -1,6 +1,7 @@
 package com.example.Proyecto_Optativa_MVG.persistence.model;
 
 
+import java.time.LocalDate;
 import java.util.List;
 
 import jakarta.persistence.Column;
@@ -34,9 +35,9 @@ public class Projects {
     @Column (name = "description")
     private String description;
     @Column (name = "start_date")
-    private String startDate;
+    private LocalDate startDate;
     @Column (name = "end_date")
-    private String endDate;
+    private LocalDate endDate;
     @Column (name = "repositiry_url")
     private String repositiryUrl;
     @Column (name = "demo_url")
